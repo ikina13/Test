@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasome App - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-left">
+            <span class="network">4G</span>
+            <span class="time">11:09</span>
+            <i class="fas fa-camera"></i>
+            <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="status-right">
+            <i class="fas fa-clock"></i>
+            <span class="network">4G</span>
+            <i class="fas fa-bolt"></i>
+            <div class="battery">
+                <div class="battery-level" style="width: 39%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- App Logo and Name -->
+        <div class="logo-section">
+            <div class="logo">
+                <div class="logo-rings">
+                    <div class="ring yellow"></div>
+                    <div class="ring light-green"></div>
+                    <div class="ring light-blue"></div>
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+            <h1 class="app-name">Kasome App</h1>
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-form">
+            <div class="input-group">
+                <input type="tel" placeholder="0714477500" class="input-field" id="phone">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="•••••" class="input-field" id="password">
+            </div>
+            <button class="login-btn" onclick="handleLogin()">Login</button>
+        </div>
+
+        <!-- Login Options -->
+        <div class="login-options">
+            <div class="remember-me">
+                <div class="checkbox checked">
+                    <i class="fas fa-check"></i>
+                </div>
+                <span>Remember me</span>
+            </div>
+            <div class="forgot-password">
+                <a href="#" onclick="handleForgotPassword()">Forgot Password</a>
+            </div>
+        </div>
+
+        <!-- Social Signup -->
+        <div class="social-signup">
+            <p class="signup-text">Signup via</p>
+            <div class="social-buttons">
+                <button class="social-btn google" onclick="handleGoogleSignup()">
+                    <div class="social-icon">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <span>Google</span>
+                </button>
+                <button class="social-btn facebook" onclick="handleFacebookSignup()">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span>Facebook</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Signup Link -->
+        <div class="signup-link">
+            <p>Don't have an account? <a href="#" onclick="handleSignup()">Sign up (Jisajili)</a></p>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="nav-item">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-item active">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="nav-item">
+            <i class="fas fa-square"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
